@@ -6,9 +6,8 @@ A BepInEx 5 mod for MineMogul that does one thing only:
 
 ## Behavior
 
-- Runs once on plugin load.
-- Runs again on scene load.
-- Runs periodically every `0.5` seconds to catch newly spawned/placed objects.
+- Runs in a few short passes after each scene load.
+- Applies to spawned/placed objects by scanning newly instantiated hierarchies.
 - Skips `MainMenu`.
 
 ## Scope

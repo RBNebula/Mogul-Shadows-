@@ -5,12 +5,16 @@
     <Nullable>enable</Nullable>
     <AssemblyName>mogulshadows</AssemblyName>
     <RootNamespace>MogulShadows</RootNamespace>
+    <Version>1.0.0</Version>
     <GameLibsDir Condition="'$(GameLibsDir)' == ''">..\Libs</GameLibsDir>
   </PropertyGroup>
 
   <ItemGroup>
     <Reference Include="BepInEx">
       <HintPath>$(GameLibsDir)\BepInEx.dll</HintPath>
+    </Reference>
+    <Reference Include="0Harmony">
+      <HintPath>$(GameLibsDir)\0Harmony.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine">
       <HintPath>$(GameLibsDir)\UnityEngine.dll</HintPath>
